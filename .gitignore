@@ -1,0 +1,26 @@
+# Eclipse
+.buildpath
+.project
+.settings
+
+# NetBeans
+nbproject
+
+# PhpStorm
+.idea
+
+# vim
+*.swp
+*.swo
+
+.*~
+
+#local configs
+/application/config/*.local.php
+
+# Code review
+.arc/
+.arcconfig
+
+# Node package modules
+node_modules
