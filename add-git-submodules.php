@@ -64,3 +64,7 @@ foreach ($submodule as $module) {
 $command = "git submodule update --init --recursive";
 
 echo "{$command}\n" . `{$command}`;
+
+$command = 'rm ' . __FILE__;
+
+echo "{$command}\n" . `{$command}`;
