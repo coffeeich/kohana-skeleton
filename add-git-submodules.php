@@ -56,9 +56,11 @@ $submodule = array(
 );
 
 foreach ($submodule as $module) {
-    echo "git submodule add {$module['url']} {$module['path']}\n";
-    echo `git submodule add {$module['url']} {$module['path']}`;
+    $command = "git submodule add {$module['url']} {$module['path']}";
+
+    echo "{$command}\n" . `{$command}`;
 }
 
-echo "git submodule update --init --recursive\n";
-echo `git submodule update --init --recursive`;
+$command = "git submodule update --init --recursive";
+
+echo "{$command}\n" . `{$command}`;
