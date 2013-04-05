@@ -100,8 +100,10 @@ if (Kohana::$environment != Kohana::PRODUCTION || PHP_SAPI == 'cli') {
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
+    'index_file' => '', // no index 'cause controller::redirect redirects to /index.php/
     'caching'    => Kohana::$environment === Kohana::PRODUCTION,
     'profile'    => Kohana::$environment !== Kohana::PRODUCTION,
+    'errors'     => Kohana::$environment !== Kohana::PRODUCTION,
 ));
 
 /**
