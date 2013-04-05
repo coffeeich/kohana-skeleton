@@ -1,0 +1,11 @@
+{
+    "name"        : "frontend"
+  , "version"     : "0.0.1"
+  , "description" : "JS Frontend Application"
+  , "engines"     : {
+        "node": ">=0.8.0"
+    }
+  , "dependencies": {
+        "requirejs" : "2.1.x"
+    }
+}

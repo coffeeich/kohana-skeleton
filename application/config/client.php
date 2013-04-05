@@ -2,7 +2,7 @@
 
 return array(
     'loader'      => 'frontend/loader',
-    'require'     => 'frontend/require',
+    'require'     => 'frontend/node_modules/requirejs/require',
     'production'  => 'frontend/builds',
     'development' => 'frontend/pages',
     'pages'       => array(
